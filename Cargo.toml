@@ -49,8 +49,8 @@ quickcheck     = { version = "0.8", optional = true }
 pest           = { version = "2.0", optional = true }
 pest_derive    = { version = "2.0", optional = true }
 
-#[patch.crates-io]
-#alga = { git = "https://github.com/rustsim/alga", branch = "dev" }
+[patch.crates-io]
+alga = { git = "https://github.com/hmunozb/alga", branch = "dynamic-identity" }
 
 [dev-dependencies]
 serde_json = "1.0"

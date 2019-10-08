@@ -34,7 +34,7 @@ where
     }
 }
 
-impl<N, R: DimName, C: DimName> AbstractMagma<Additive> for MatrixMN<N, R, C>
+impl<N, R: Dim, C: Dim> AbstractMagma<Additive> for MatrixMN<N, R, C>
 where
     N: Scalar + ClosedAdd,
     DefaultAllocator: Allocator<N, R, C>,
@@ -45,7 +45,7 @@ where
     }
 }
 
-impl<N, R: DimName, C: DimName> TwoSidedInverse<Additive> for MatrixMN<N, R, C>
+impl<N, R: Dim, C: Dim> TwoSidedInverse<Additive> for MatrixMN<N, R, C>
 where
     N: Scalar + ClosedNeg,
     DefaultAllocator: Allocator<N, R, C>,

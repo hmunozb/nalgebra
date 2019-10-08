@@ -21,6 +21,7 @@ mod edition;
 pub mod indexing;
 mod matrix;
 mod matrix_alga;
+mod matrix_dyn_alga;
 mod array_storage;
 mod matrix_slice;
 #[cfg(any(feature = "std", feature = "alloc"))]
